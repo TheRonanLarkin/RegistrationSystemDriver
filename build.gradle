@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'RegistrationSystemDriver.Main'
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10.13'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    implementation 'com.github.TheRonanLarkin:RegistrationSystem:v1.0.1'
+    
+}
+
